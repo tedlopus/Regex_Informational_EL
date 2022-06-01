@@ -21,17 +21,24 @@ A regular expression in JavaScript are patterns used to match character combinat
 
 ## Quantifiers
 a+ is the part of this regex that is a quantifier. This quantifier matches one or more consecutive 'a' characters. This can be 'a', 'aa', 'aaa', 'aaaa', etc. This quantifier stands alone in the regex and focuses only on 'a'.
+
 ## Grouping_Constructs
 There are two examples of grouping constructs in this regex. They are (?:%%%) and (?i:run|walk). I will focus on (?:%%%) for this portion of the informational regex. (?:...) is a non-capturing group that allows you to apply quantifiers to part of your regex but does not capture an ID. This grouping construct matches everything that is enclosed in the parentheses and follows '?:'.
+
 ## Bracket_Expressions
-[a-z\d] is one part of this regex that is a bracket expression. This bracket expression matches any characters between lower case a and z and also matches any digit with '\d'. These bracket expressions allow you to list possible matches for one chracter entry within the brackets.
+[a-z\d] is one part of this regex that is a bracket expression. This bracket expression matches any characters between lowercase a and z and also matches any digit with '\d'. These bracket expressions allow you to list possible matches for one chracter entry within the brackets.
+
 ## Character_Classes
 [\w] is one part of this regex that is a character class. The '/w' is a special character class because it can match any alphanumeric character including underscore. It is equivalent to the following bracket expression: [A-Za-z0-9_].
+
 ## The_OR_Operator
+(?i:run|walk) is the part of this regex that is the OR operator. The OR operator in this regex ( | ) is similar to the OR operator in javascript expressions ( || ). The OR operator in this grouping construct matches to either run or walk.
 
 ## Flags
+(?i:run|walk) conatins the flag part in this regex. 'i' is a case-insensitive search that accepts either uppercase or lowercase versions of run or walk since it is combined with the previously mentioned OR operator.
 
 ## Character_Escapes
+There are many character escape sequences for regular expressions but I choose /n for mine. '/n' creates a new line and matches when a new line is entered. It can be used with multiline, not single line, expressions.
 
 ## License
 This project is licensed under  MIT.
