@@ -24,9 +24,9 @@ a+ is the part of this regex that is a quantifier. This quantifier matches one o
 ## Grouping_Constructs
 There are two examples of grouping constructs in this regex. They are (?:%%%) and (?i:run|walk). I will focus on (?:%%%) for this portion of the informational regex. (?:...) is a non-capturing group that allows you to apply quantifiers to part of your regex but does not capture an ID. This grouping construct matches everything that is enclosed in the parentheses and follows '?:'.
 ## Bracket_Expressions
-[a-z\d] is the part of this regex that is a bracket expression.
+[a-z\d] is one part of this regex that is a bracket expression. This bracket expression matches any characters between lower case a and z and also matches any digit with '\d'. These bracket expressions allow you to list possible matches for one chracter entry within the brackets.
 ## Character_Classes
-
+[\w] is one part of this regex that is a character class. The '/w' is a special character class because it can match any alphanumeric character including underscore. It is equivalent to the following bracket expression: [A-Za-z0-9_].
 ## The_OR_Operator
 
 ## Flags
