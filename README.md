@@ -20,12 +20,11 @@ A regular expression in JavaScript are patterns used to match character combinat
 \A is the part of this regex that is an anchor. This anchor matches the start of the string and is not affected by multiline mode. This starting string anchor is attached to [a-zA-Z] which means the starting character of the string could be any lowercase or uppercase letter of the alphabet.
 
 ## Quantifiers
-
-
+a+ is the part of this regex that is a quantifier. This quantifier matches one or more consecutive 'a' characters. This can be 'a', 'aa', 'aaa', 'aaaa', etc. This quantifier stands alone in the regex and focuses only on 'a'.
 ## Grouping_Constructs
-
+There are two examples of grouping constructs in this regex. They are (?:%%%) and (?i:run|walk). I will focus on (?:%%%) for this portion of the informational regex. (?:...) is a non-capturing group that allows you to apply quantifiers to part of your regex but does not capture an ID. This grouping construct matches everything that is enclosed in the parentheses and follows '?:'.
 ## Bracket_Expressions
-
+[a-z\d] is the part of this regex that is a bracket expression.
 ## Character_Classes
 
 ## The_OR_Operator
